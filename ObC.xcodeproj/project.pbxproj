@@ -17,6 +17,7 @@
 		7043119C27BA308700C11925 /* ObCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7043119B27BA308700C11925 /* ObCTests.m */; };
 		704311A627BA308700C11925 /* ObCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 704311A527BA308700C11925 /* ObCUITests.m */; };
 		704311A827BA308700C11925 /* ObCUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 704311A727BA308700C11925 /* ObCUITestsLaunchTests.m */; };
+		704311B627BCB87F00C11925 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 704311B527BCB87F00C11925 /* Vehicle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		704311A127BA308700C11925 /* ObCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		704311A527BA308700C11925 /* ObCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObCUITests.m; sourceTree = "<group>"; };
 		704311A727BA308700C11925 /* ObCUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObCUITestsLaunchTests.m; sourceTree = "<group>"; };
+		704311B427BCB87F00C11925 /* Vehicle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		704311B527BCB87F00C11925 /* Vehicle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 		7043117E27BA308300C11925 /* ObC */ = {
 			isa = PBXGroup;
 			children = (
+				704311B827BCDD3000C11925 /* NSStringTest */,
+				704311B727BCDD2800C11925 /* Basic */,
 				7043117F27BA308300C11925 /* AppDelegate.h */,
 				7043118027BA308300C11925 /* AppDelegate.m */,
 				7043118227BA308300C11925 /* SceneDelegate.h */,
@@ -114,7 +119,6 @@
 				7043118B27BA308600C11925 /* Assets.xcassets */,
 				7043118D27BA308600C11925 /* LaunchScreen.storyboard */,
 				7043119027BA308600C11925 /* Info.plist */,
-				7043119127BA308600C11925 /* main.m */,
 			);
 			path = ObC;
 			sourceTree = "<group>";
@@ -134,6 +138,23 @@
 				704311A727BA308700C11925 /* ObCUITestsLaunchTests.m */,
 			);
 			path = ObCUITests;
+			sourceTree = "<group>";
+		};
+		704311B727BCDD2800C11925 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				7043119127BA308600C11925 /* main.m */,
+				704311B427BCB87F00C11925 /* Vehicle.h */,
+				704311B527BCB87F00C11925 /* Vehicle.m */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		704311B827BCDD3000C11925 /* NSStringTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSStringTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +291,7 @@
 				7043118127BA308300C11925 /* AppDelegate.m in Sources */,
 				7043119227BA308600C11925 /* main.m in Sources */,
 				7043118427BA308300C11925 /* SceneDelegate.m in Sources */,
+				704311B627BCB87F00C11925 /* Vehicle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
