@@ -27,17 +27,51 @@ int main(int argc, char * argv[]) {
         
         [hello print];
         
-        if (hello.wheels == 4) {
-            NSLog(@"wheels : 4");
-        } else {
-            NSLog(@"NO");
+        
+        //immutable class
+        NSString *str = [[NSString alloc]initWithString:@"This is Me!"];
+        
+        NSString *result;
+        result = [[str substringToIndex:6]substringFromIndex:3];
+        
+        result = [[str substringWithRange:NSMakeRange(3, 8)]uppercaseString];
+        
+        
+        NSLog(@"dd : %@", result);
+        
+        
+        //mutable class
+        NSMutableString *mstr = [NSMutableString stringWithString: str];
+        [mstr appendString: @"Hi!"];
+        
+        NSLog(@"dd : %@", mstr);
+            
+        
+        NSArray *month = [[NSArray alloc]initWithObjects:@"Jan", @"Feb", @"Mar", @"April", nil];
+        
+        for(int i = 0; i < [month count]; i++) {
+            NSLog(@"%@", [month objectAtIndex:i]);
         }
         
-        for (int i = 0; i < hello.seats; i++) {
-            NSLog(@"wheels: %i", i);
+        for (NSString *temp in month) {
+            NSLog(@"month : %@", temp);
         }
         
-                
+        NSMutableArray *mmonth = [NSMutableArray arrayWithArray:month];
+        [mmonth addObject:@"ddd"];
+        
+        for (NSString *temp in mmonth) {
+            NSLog(@"month : %@", temp);
+        }
+        
+        NSDictionary *dic = [[NSDictionary alloc]initWithObjectsAndKeys:@"이지원", @"이름", @"후후", @"할말", nil];
+        
+        NSLog(@"name : %@", dic[@"이름"]);
+        
+        NSMutableDictionary *mdic = [NSMutableDictionary dictionaryWithDictionary:dic];
+        
+        [mdic setObject:@"한국" forKey:@"웨얼아임스테잉"];
+        
         
         appDelegateClassName = NSStringFromClass([AppDelegate class]);
     }
